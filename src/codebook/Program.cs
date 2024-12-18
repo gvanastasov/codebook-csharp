@@ -136,63 +136,87 @@ namespace CodebookMenu
         }
 
         static void AddChapter(string chaptersPath)
-{
-    Console.Clear();
-    Console.WriteLine("Enter the name of the new chapter:"); 
-    string name = Console.ReadLine();
-
-    Console.WriteLine("Should the chapter be added at the end? (y/n):");
-    bool atEnd = Console.ReadKey().Key == ConsoleKey.Y;
-
-    var chapters = Directory.GetDirectories(chaptersPath).OrderBy(d => d).ToList();
-    var newChapterNumber = atEnd ? chapters.Count + 1 : 1;
-    var newChapterName = $"{newChapterNumber:D2}_{name}";
-    var newChapterPath = Path.Combine(chaptersPath, newChapterName);
-
-    Process.Start("dotnet", $"new console -o \"{newChapterPath}\" --name \"{name}\"").WaitForExit();
-
-    if (!atEnd)
-    {
-        for (int i = newChapterNumber; i <= chapters.Count; i++)
         {
-            var oldPath = chapters[i - 1];
-            var newPath = Path.Combine(chaptersPath, $"{i + 1:D2}_{Path.GetFileName(oldPath).Substring(3)}");
-            Directory.Move(oldPath, newPath);
+            Console.Clear();
+            Console.WriteLine("Enter the name of the new chapter:"); 
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Should the chapter be added at the end? (y/n):");
+            bool atEnd = Console.ReadKey().Key == ConsoleKey.Y;
+
+            var chapters = Directory.GetDirectories(chaptersPath).OrderBy(d => d).ToList();
+            var newChapterNumber = atEnd ? chapters.Count + 1 : 1;
+            var newChapterName = $"{newChapterNumber:D2}_{name}";
+            var newChapterPath = Path.Combine(chaptersPath, newChapterName);
+
+            Process.Start("dotnet", $"new console -o \"{newChapterPath}\" --name \"{name}\"").WaitForExit();
+
+            if (!atEnd)
+            {
+                for (int i = newChapterNumber; i <= chapters.Count; i++)
+                {
+                    var oldPath = chapters[i - 1];
+                    var newPath = Path.Combine(chaptersPath, $"{i + 1:D2}_{Path.GetFileName(oldPath).Substring(3)}");
+                    Directory.Move(oldPath, newPath);
+                }
+            }
+
+            // Add the new project to the solution
+            var solutionPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "../../codebook-csharp.sln"));
+            var projectPath = Path.GetFullPath(Path.Combine(newChapterPath, $"{name}.csproj"));
+
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                Arguments = $"sln \"{solutionPath}\" add \"{projectPath}\"",
+                WorkingDirectory = Path.GetDirectoryName(solutionPath),
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
+            };
+
+            using (var process = Process.Start(processStartInfo))
+            {
+                process.WaitForExit();
+                Console.WriteLine(process.StandardOutput.ReadToEnd());
+                Console.WriteLine(process.StandardError.ReadToEnd());
+            }
+
+            Console.WriteLine($"Chapter {newChapterName} added. Press any key to continue...");
+            Console.ReadKey();
         }
-    }
-
-    // Add the new project to the solution
-    var solutionPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "../../codebook-csharp.sln"));
-    var projectPath = Path.GetFullPath(Path.Combine(newChapterPath, $"{name}.csproj"));
-
-    var processStartInfo = new ProcessStartInfo
-    {
-        FileName = "dotnet",
-        Arguments = $"sln \"{solutionPath}\" add \"{projectPath}\"",
-        WorkingDirectory = Path.GetDirectoryName(solutionPath),
-        UseShellExecute = false,
-        RedirectStandardOutput = true,
-        RedirectStandardError = true
-    };
-
-    using (var process = Process.Start(processStartInfo))
-    {
-        process.WaitForExit();
-        Console.WriteLine(process.StandardOutput.ReadToEnd());
-        Console.WriteLine(process.StandardError.ReadToEnd());
-    }
-
-    Console.WriteLine($"Chapter {newChapterName} added. Press any key to continue...");
-    Console.ReadKey();
-}
 
         static void RemoveChapter(string chaptersPath, int index)
         {
             var chapters = Directory.GetDirectories(chaptersPath).OrderBy(d => d).ToList();
             var chapterPath = chapters[index];
+            var projectName = Path.GetFileName(chapterPath).Substring(3); // Remove the numbering
+            var projectPath = Path.Combine(chapterPath, $"{projectName}.csproj");
 
+            // Remove the project from the solution
+            var solutionPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "../../codebook-csharp.sln"));
+
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                Arguments = $"sln \"{solutionPath}\" remove \"{projectPath}\"",
+                WorkingDirectory = Path.GetDirectoryName(solutionPath),
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true
+            };
+
+            using (var process = Process.Start(processStartInfo))
+            {
+                process.WaitForExit();
+                Console.WriteLine(process.StandardOutput.ReadToEnd());
+                Console.WriteLine(process.StandardError.ReadToEnd());
+            }
+
+            // Delete the chapter directory
             Directory.Delete(chapterPath, true);
 
+            // Rename remaining chapters
             for (int i = index; i < chapters.Count - 1; i++)
             {
                 var oldPath = chapters[i + 1];
