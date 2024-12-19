@@ -1,5 +1,5 @@
-﻿// Chapter 02: Variables and Constants
-// This program demonstrates how to use variables and constants in C#,
+﻿// Chapter 02: Variables
+// This program demonstrates how to use variables in C#,
 // including declaration, initialization, and basic operations.
 
 using System; // Required for console input/output.
