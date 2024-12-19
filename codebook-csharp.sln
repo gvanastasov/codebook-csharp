@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nullables", "src\chapters\0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "type-inference", "src\chapters\06_type-inference\type-inference.csproj", "{B8522DED-760A-4B1B-8B12-0397F16F1A91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arithmetic-operators", "src\chapters\07_arithmetic-operators\arithmetic-operators.csproj", "{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{9148B679-B7BA-4285-A188-2FE18A227291} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{B8522DED-760A-4B1B-8B12-0397F16F1A91} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{40FBD360-B5AB-4FE5-B81F-D85BA5100C00} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
