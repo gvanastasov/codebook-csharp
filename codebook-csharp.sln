@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handle-exceptions", "src\ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-definition", "src\chapters\18_methods-definition\methods-definition.csproj", "{3D74F0DC-FE72-41C7-A414-62873825242E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-overload", "src\chapters\19_methods-overload\methods-overload.csproj", "{8DB0C155-E256-4493-B635-648ECEEF1994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,10 @@ Global
 		{3D74F0DC-FE72-41C7-A414-62873825242E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D74F0DC-FE72-41C7-A414-62873825242E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D74F0DC-FE72-41C7-A414-62873825242E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB0C155-E256-4493-B635-648ECEEF1994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB0C155-E256-4493-B635-648ECEEF1994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB0C155-E256-4493-B635-648ECEEF1994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB0C155-E256-4493-B635-648ECEEF1994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{0C098FBA-CD65-4BCD-A0DB-FBDB2B0739E6} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{3D74F0DC-FE72-41C7-A414-62873825242E} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{8DB0C155-E256-4493-B635-648ECEEF1994} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
