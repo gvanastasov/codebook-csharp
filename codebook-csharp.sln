@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class-methods", "src\chapte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructors-parameterized", "src\chapters\27_constructors-parameterized\constructors-parameterized.csproj", "{D9F70F01-5F5B-4B87-8007-B50188A81F81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructors-static", "src\chapters\28_constructors-static\constructors-static.csproj", "{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{D9F70F01-5F5B-4B87-8007-B50188A81F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9F70F01-5F5B-4B87-8007-B50188A81F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9F70F01-5F5B-4B87-8007-B50188A81F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -215,6 +221,7 @@ Global
 		{9317D2AC-74E6-4076-8A43-D2A6704ED7A3} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{2C7C78E0-E861-4A1C-874E-CC82CD374DD4} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{D9F70F01-5F5B-4B87-8007-B50188A81F81} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
