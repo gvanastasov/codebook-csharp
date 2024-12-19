@@ -1,6 +1,6 @@
 ﻿// Chapter 03: Constants
-// This program demonstrates how to use constants in C#,
-// including declaration, initialization, and basic operations.
+// This program demonstrates how to declare and use constants in C#.
+// Constants are immutable, meaning their value cannot be changed after declaration.
 
 using System; // Required for console input/output.
 
@@ -10,23 +10,26 @@ namespace Chapter03
     {
         static void Main(string[] args)
         {
-            // 1. Constants
-            // A constant is a value that cannot change during the program.
-            // Constants must be initialized when declared.
-            const int DaysInWeek = 7;
-            const double Gravity = 9.8;
+            // Declaring constants
+            // Constants are defined using the 'const' keyword.
+            // Their value must be assigned during declaration and cannot change.
+            const double Pi = 3.14159; // The value of Pi
+            const int DaysInWeek = 7; // Number of days in a week
 
-            // Displaying the values of constants.
-            Console.WriteLine("\nConstants:");
-            Console.WriteLine($"Days in a week: {DaysInWeek}");
-            Console.WriteLine($"Gravity: {Gravity}");
+            // Uncommenting the line below would cause a compilation error
+            // because constants cannot be reassigned.
+            // Pi = 3.14;
 
-            // 2. Constants cannot be reassigned.
-            // Uncommenting the line below would cause a compilation error 
-            // because constants cannot be changed.
-            // DaysInWeek = 8;
+            // Displaying constants with descriptions.
+            Console.WriteLine("Constants:");
+            Console.WriteLine($"Pi: {Pi} - A mathematical constant.");
+            Console.WriteLine($"Days in a week: {DaysInWeek} - A fixed number representing days in a week.");
 
-            // Pause to allow the user to read the output.
+            // Why use constants?
+            // - They prevent accidental modification of critical values.
+            // - They make the code easier to read and maintain.
+
+            // Pause for the user
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
