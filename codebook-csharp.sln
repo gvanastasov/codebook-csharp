@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "variables", "src\chapters\0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constants", "src\chapters\03_constants\constants.csproj", "{F306BE5E-04E4-4DEF-965E-E8C50F78B589}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primitives", "src\chapters\04_primitives\primitives.csproj", "{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{F306BE5E-04E4-4DEF-965E-E8C50F78B589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F306BE5E-04E4-4DEF-965E-E8C50F78B589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F306BE5E-04E4-4DEF-965E-E8C50F78B589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{5345D375-63A0-40CE-AACD-CF3983317FB2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{1075B298-702A-4AB9-B4AE-E5D74C8958C1} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{F306BE5E-04E4-4DEF-965E-E8C50F78B589} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
