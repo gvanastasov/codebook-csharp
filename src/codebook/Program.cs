@@ -67,7 +67,7 @@ namespace CodebookMenu
                 }
 
                 Console.WriteLine("\nUse Up/Down Arrow keys to navigate and Enter to select.");
-                Console.WriteLine("Press A to add, R to remove, E to edit a chapter.");
+                Console.WriteLine("Press A to add, R to remove.");
 
                 var key = Console.ReadKey(true).Key;
 
@@ -86,9 +86,6 @@ namespace CodebookMenu
                         return -1;
                     case ConsoleKey.R:
                         RemoveChapter(chaptersPath, selectedIndex);
-                        return -1;
-                    case ConsoleKey.E:
-                        EditChapter(chaptersPath, selectedIndex);
                         return -1;
                 }
             }
@@ -225,30 +222,6 @@ namespace CodebookMenu
             }
 
             Console.WriteLine($"Chapter {index + 1:D2} removed. Press any key to continue...");
-            Console.ReadKey();
-        }
-
-        static void EditChapter(string chaptersPath, int index)
-        {
-            var chapters = Directory.GetDirectories(chaptersPath).OrderBy(d => d).ToList();
-            var chapterPath = chapters[index];
-
-            Console.Clear();
-            Console.WriteLine("Enter the new name of the chapter:");
-            string newName = Console.ReadLine();
-
-            var newChapterPath = Path.Combine(chaptersPath, $"{index + 1:D2}_{newName}");
-            Directory.Move(chapterPath, newChapterPath);
-
-            var csprojPath = Directory.GetFiles(newChapterPath, "*.csproj").FirstOrDefault();
-            if (csprojPath != null)
-            {
-                string csprojContent = File.ReadAllText(csprojPath);
-                string updatedCsprojContent = Regex.Replace(csprojContent, @"<RootNamespace>.*?</RootNamespace>", $"<RootNamespace>{newName}</RootNamespace>");
-                File.WriteAllText(csprojPath, updatedCsprojContent);
-            }
-
-            Console.WriteLine($"Chapter {index + 1:D2} renamed to {newName}. Press any key to continue...");
             Console.ReadKey();
         }
     }
