@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conditional-statements", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch-statements", "src\chapters\12_switch-statements\switch-statements.csproj", "{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "for-loop", "src\chapters\13_for-loop\for-loop.csproj", "{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{6D7A1403-F275-4292-8316-95DFB1966BC0} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{689631CD-64AF-40AE-BC1B-B343FADA66D1} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
