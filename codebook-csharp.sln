@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primitives", "src\chapters\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nullables", "src\chapters\05_nullables\nullables.csproj", "{9148B679-B7BA-4285-A188-2FE18A227291}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "type-inference", "src\chapters\06_type-inference\type-inference.csproj", "{B8522DED-760A-4B1B-8B12-0397F16F1A91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{9148B679-B7BA-4285-A188-2FE18A227291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9148B679-B7BA-4285-A188-2FE18A227291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9148B679-B7BA-4285-A188-2FE18A227291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8522DED-760A-4B1B-8B12-0397F16F1A91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{F306BE5E-04E4-4DEF-965E-E8C50F78B589} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{9148B679-B7BA-4285-A188-2FE18A227291} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{B8522DED-760A-4B1B-8B12-0397F16F1A91} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
