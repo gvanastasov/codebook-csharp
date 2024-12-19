@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-nested", "src\chapt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-closure", "src\chapters\21_methods-closure\methods-closure.csproj", "{ACF85432-5789-43CF-B67A-462F49E15BAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-extension", "src\chapters\22_methods-extension\methods-extension.csproj", "{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{ACF85432-5789-43CF-B67A-462F49E15BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF85432-5789-43CF-B67A-462F49E15BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF85432-5789-43CF-B67A-462F49E15BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +179,7 @@ Global
 		{8DB0C155-E256-4493-B635-648ECEEF1994} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{093F575A-C79A-46AA-9BC4-A638040CB0A2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{ACF85432-5789-43CF-B67A-462F49E15BAA} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
