@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while-loop", "src\chapters\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "foreach-loop", "src\chapters\15_foreach-loop\foreach-loop.csproj", "{A063BAB6-999A-40F9-84A9-753248CB7B99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "throw-exceptions", "src\chapters\16_throw-exceptions\throw-exceptions.csproj", "{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{A063BAB6-999A-40F9-84A9-753248CB7B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A063BAB6-999A-40F9-84A9-753248CB7B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A063BAB6-999A-40F9-84A9-753248CB7B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{561FFFD1-B4CF-4FDD-8E79-7FF19F59812C} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{A063BAB6-999A-40F9-84A9-753248CB7B99} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
