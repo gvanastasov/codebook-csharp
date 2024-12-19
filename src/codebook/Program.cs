@@ -12,6 +12,7 @@ namespace CodebookMenu
         {
             string chaptersPath = Path.Combine(Directory.GetCurrentDirectory(), "../chapters");
 
+            int selectedGroupIndex = 0;
             while (true)
             {
                 var chapters = Directory.GetDirectories(chaptersPath)
@@ -23,72 +24,80 @@ namespace CodebookMenu
                     .OrderBy(chapter => chapter.Name)
                     .ToArray();
 
+                var groupedChapters = chapters
+                    .GroupBy(chapter => Regex.Match(chapter.Name, @"^\d+_(\w+)").Groups[1].Value)
+                    .OrderBy(group => group.Min(chapter => chapter.Name))
+                    .ToArray();
+
                 Console.Clear();
                 Console.WriteLine("Welcome to the C# Codebook");
                 Console.WriteLine("Use Up/Down Arrow keys to navigate and Enter to select.\n");
 
-                int selectedIndex = DisplayMenu(chaptersPath, chapters);
+                selectedGroupIndex = DisplayMenu("Select a group:", groupedChapters.Select(g => g.Key).Concat(new[] { "Exit" }).ToArray(), selectedGroupIndex);
 
-                if (selectedIndex == chapters.Length)
+                if (selectedGroupIndex == groupedChapters.Length)
                 {
                     Console.WriteLine("Goodbye!");
                     return;
                 }
-                else if (selectedIndex == -1)
+                else if (selectedGroupIndex == -1)
                 {
                     continue;
                 }
 
-                RunChapter(chapters[selectedIndex].Path);
+                var selectedGroup = groupedChapters[selectedGroupIndex].OrderBy(chapter => chapter.Name).ToArray();
+                int selectedChapterIndex = 0;
+                selectedChapterIndex = DisplayMenu($"Select a chapter from {groupedChapters[selectedGroupIndex].Key}:", selectedGroup.Select(c => c.Name).Concat(new[] { "Back" }).ToArray(), selectedChapterIndex);
+
+                if (selectedChapterIndex == selectedGroup.Length)
+                {
+                    continue;
+                }
+                else if (selectedChapterIndex == -1)
+                {
+                    continue;
+                }
+
+                RunChapter(selectedGroup[selectedChapterIndex].Path);
             }
         }
 
-        static int DisplayMenu(string chaptersPath, dynamic[] chapters)
+        static int DisplayMenu(string prompt, string[] options, int selectedIndex = 0)
         {
-            int selectedIndex = 0;
-
-            while (true)
+            ConsoleKey key;
+            do
             {
                 Console.Clear();
-                Console.WriteLine("Select a chapter:\n");
-
-                for (int i = 0; i < chapters.Length; i++)
+                Console.WriteLine(prompt);
+                for (int i = 0; i < options.Length; i++)
                 {
                     if (i == selectedIndex)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"> {chapters[i].Name}");
+                        Console.WriteLine($"> {options[i]}");
                         Console.ResetColor();
                     }
                     else
                     {
-                        Console.WriteLine($"  {chapters[i].Name}");
+                        Console.WriteLine($"  {options[i]}");
                     }
                 }
 
-                Console.WriteLine("\nUse Up/Down Arrow keys to navigate and Enter to select.");
-                Console.WriteLine("Press A to add, R to remove.");
+                key = Console.ReadKey(true).Key;
 
-                var key = Console.ReadKey(true).Key;
-
-                switch (key)
+                if (key == ConsoleKey.UpArrow)
                 {
-                    case ConsoleKey.UpArrow:
-                        selectedIndex = (selectedIndex == 0) ? chapters.Length - 1 : selectedIndex - 1;
-                        break;
-                    case ConsoleKey.DownArrow:
-                        selectedIndex = (selectedIndex == chapters.Length - 1) ? 0 : selectedIndex + 1;
-                        break;
-                    case ConsoleKey.Enter:
-                        return selectedIndex;
-                    case ConsoleKey.A:
-                        AddChapter(chaptersPath);
-                        return -1;
-                    case ConsoleKey.R:
-                        RemoveChapter(chaptersPath, selectedIndex);
-                        return -1;
+                    selectedIndex = (selectedIndex == 0) ? options.Length - 1 : selectedIndex - 1;
                 }
-            }
+                else if (key == ConsoleKey.DownArrow)
+                {
+                    selectedIndex = (selectedIndex == options.Length - 1) ? 0 : selectedIndex + 1;
+                }
+                else if (key == ConsoleKey.Enter)
+                {
+                    return selectedIndex;
+                }
+            } while (true);
         }
 
         static void RunChapter(string chapterPath)
