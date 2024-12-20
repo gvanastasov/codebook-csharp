@@ -15,27 +15,22 @@ namespace CodebookMenu
             int selectedGroupIndex = 0;
             while (true)
             {
-                var chapters = Directory.GetDirectories(chaptersPath)
+                var groups = Directory.GetDirectories(chaptersPath)
                     .Select(dir => new
                     {
                         Name = Path.GetFileName(dir),
                         Path = dir
                     })
-                    .OrderBy(chapter => chapter.Name)
-                    .ToArray();
-
-                var groupedChapters = chapters
-                    .GroupBy(chapter => Regex.Match(chapter.Name, @"^\d+_(\w+)").Groups[1].Value)
-                    .OrderBy(group => group.Min(chapter => chapter.Name))
+                    .OrderBy(group => group.Name)
                     .ToArray();
 
                 Console.Clear();
                 Console.WriteLine("Welcome to the C# Codebook");
                 Console.WriteLine("Use Up/Down Arrow keys to navigate and Enter to select.\n");
 
-                selectedGroupIndex = DisplayMenu("Select a group:", groupedChapters.Select(g => g.Key).Concat(new[] { "Exit" }).ToArray(), selectedGroupIndex);
+                selectedGroupIndex = DisplayMenu("Select a group:", groups.Select(g => g.Name).Concat(new[] { "Exit" }).ToArray(), selectedGroupIndex);
 
-                if (selectedGroupIndex == groupedChapters.Length)
+                if (selectedGroupIndex == groups.Length)
                 {
                     Console.WriteLine("Goodbye!");
                     return;
@@ -45,11 +40,20 @@ namespace CodebookMenu
                     continue;
                 }
 
-                var selectedGroup = groupedChapters[selectedGroupIndex].OrderBy(chapter => chapter.Name).ToArray();
-                int selectedChapterIndex = 0;
-                selectedChapterIndex = DisplayMenu($"Select a chapter from {groupedChapters[selectedGroupIndex].Key}:", selectedGroup.Select(c => c.Name).Concat(new[] { "Back" }).ToArray(), selectedChapterIndex);
+                var selectedGroup = groups[selectedGroupIndex];
+                var chapters = Directory.GetDirectories(selectedGroup.Path)
+                    .Select(dir => new
+                    {
+                        Name = Path.GetFileName(dir),
+                        Path = dir
+                    })
+                    .OrderBy(chapter => chapter.Name)
+                    .ToArray();
 
-                if (selectedChapterIndex == selectedGroup.Length)
+                int selectedChapterIndex = 0;
+                selectedChapterIndex = DisplayMenu($"Select a chapter from {selectedGroup.Name}:", chapters.Select(c => c.Name).Concat(new[] { "Back" }).ToArray(), selectedChapterIndex);
+
+                if (selectedChapterIndex == chapters.Length)
                 {
                     continue;
                 }
@@ -58,7 +62,7 @@ namespace CodebookMenu
                     continue;
                 }
 
-                RunChapter(selectedGroup[selectedChapterIndex].Path);
+                RunChapter(chapters[selectedChapterIndex].Path);
             }
         }
 
