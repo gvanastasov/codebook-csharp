@@ -61,13 +61,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0703_class-properties", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0704_class-methods", "src\chapters\07_class\04_class-methods\0704_class-methods.csproj", "{2C7C78E0-E861-4A1C-874E-CC82CD374DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0801_constructors-parameterized", "src\chapters\08_constructors\01_constructors-parameterized\0801_constructors-parameterized.csproj", "{D9F70F01-5F5B-4B87-8007-B50188A81F81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0705_constructors-parameterized", "src\chapters\07_class\05_constructors-parameterized\0705_constructors-parameterized.csproj", "{D9F70F01-5F5B-4B87-8007-B50188A81F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0802_constructors-static", "src\chapters\08_constructors\02_constructors-static\0802_constructors-static.csproj", "{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0706_constructors-static", "src\chapters\07_class\06_constructors-static\0706_constructors-static.csproj", "{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_constructors", "08_constructors", "{422A5F07-0584-49FF-9B0E-C8775C874C0F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "finalizers", "src\chapters\08_constructors\03_finalizers\finalizers.csproj", "{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0707_finalizers", "src\chapters\07_class\07_finalizers\0707_finalizers.csproj", "{FCAC2F65-8A95-4816-8474-9AFD26FFFF77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,10 +189,10 @@ Global
 		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCAC2F65-8A95-4816-8474-9AFD26FFFF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAC2F65-8A95-4816-8474-9AFD26FFFF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAC2F65-8A95-4816-8474-9AFD26FFFF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAC2F65-8A95-4816-8474-9AFD26FFFF77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,8 +228,7 @@ Global
 		{2C7C78E0-E861-4A1C-874E-CC82CD374DD4} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{D9F70F01-5F5B-4B87-8007-B50188A81F81} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
-		{422A5F07-0584-49FF-9B0E-C8775C874C0F} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
-		{E80C8BA7-9316-4F05-8BC7-4D2D603AA8B0} = {422A5F07-0584-49FF-9B0E-C8775C874C0F}
+		{FCAC2F65-8A95-4816-8474-9AFD26FFFF77} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
