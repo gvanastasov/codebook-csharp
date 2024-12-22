@@ -9,61 +9,61 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codebook", "src\codebook\co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapters", "chapters", "{5628B24A-4EA8-4324-AAB3-8FAF018A7C72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello_world", "src\chapters\01_basics\01_hello-world\hello-world.csproj", "{5345D375-63A0-40CE-AACD-CF3983317FB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0101_hello-world", "src\chapters\01_basics\01_hello-world\0101_hello-world.csproj", "{5345D375-63A0-40CE-AACD-CF3983317FB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "variables", "src\chapters\01_basics\02_variables\variables.csproj", "{1075B298-702A-4AB9-B4AE-E5D74C8958C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0102_variables", "src\chapters\01_basics\02_variables\0102_variables.csproj", "{1075B298-702A-4AB9-B4AE-E5D74C8958C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constants", "src\chapters\01_basics\03_constants\constants.csproj", "{F306BE5E-04E4-4DEF-965E-E8C50F78B589}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0103_constants", "src\chapters\01_basics\03_constants\0103_constants.csproj", "{F306BE5E-04E4-4DEF-965E-E8C50F78B589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primitives", "src\chapters\01_basics\04_primitives\primitives.csproj", "{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0104_primitives", "src\chapters\01_basics\04_primitives\0104_primitives.csproj", "{F7386AC8-CD7D-4D77-B8B7-3855A6C7C3D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nullables", "src\chapters\01_basics\05_nullables\nullables.csproj", "{9148B679-B7BA-4285-A188-2FE18A227291}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0105_nullables", "src\chapters\01_basics\05_nullables\0105_nullables.csproj", "{9148B679-B7BA-4285-A188-2FE18A227291}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "type-inference", "src\chapters\01_basics\06_type-inference\type-inference.csproj", "{B8522DED-760A-4B1B-8B12-0397F16F1A91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0106_type-inference", "src\chapters\01_basics\06_type-inference\0106_type-inference.csproj", "{B8522DED-760A-4B1B-8B12-0397F16F1A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arithmetic-operators", "src\chapters\02_operators\07_arithmetic-operators\arithmetic-operators.csproj", "{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0201_arithmetic-operators", "src\chapters\02_operators\01_arithmetic-operators\0201_arithmetic-operators.csproj", "{40FBD360-B5AB-4FE5-B81F-D85BA5100C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comparison-operators", "src\chapters\02_operators\08_comparison-operators\comparison-operators.csproj", "{00E9F573-6BBA-4978-B253-737880BE8EC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0202_comparison-operators", "src\chapters\02_operators\02_comparison-operators\0202_comparison-operators.csproj", "{00E9F573-6BBA-4978-B253-737880BE8EC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logical-operators", "src\chapters\02_operators\09_logical-operators\logical-operators.csproj", "{324C7E11-20DC-4DB2-8EF5-333E6DADF1F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0203_logical-operators", "src\chapters\02_operators\03_logical-operators\0203_logical-operators.csproj", "{324C7E11-20DC-4DB2-8EF5-333E6DADF1F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitwise-operators", "src\chapters\02_operators\10_bitwise-operators\bitwise-operators.csproj", "{6D7A1403-F275-4292-8316-95DFB1966BC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0204_bitwise-operators", "src\chapters\02_operators\04_bitwise-operators\0204_bitwise-operators.csproj", "{6D7A1403-F275-4292-8316-95DFB1966BC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conditional-statements", "src\chapters\03_flow-controls\11_conditional-statements\conditional-statements.csproj", "{689631CD-64AF-40AE-BC1B-B343FADA66D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0301_conditional-statements", "src\chapters\03_flow-controls\01_conditional-statements\0301_conditional-statements.csproj", "{689631CD-64AF-40AE-BC1B-B343FADA66D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch-statements", "src\chapters\03_flow-controls\12_switch-statements\switch-statements.csproj", "{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0302_switch-statements", "src\chapters\03_flow-controls\02_switch-statements\0302_switch-statements.csproj", "{AA0D2110-29AD-4A4A-8E0F-E1B0E6FEC264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "for-loop", "src\chapters\04_loops\13_for-loop\for-loop.csproj", "{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0401_for-loop", "src\chapters\04_loops\01_for-loop\0401_for-loop.csproj", "{5AB978DD-4BD1-4D41-9D59-23C928ED8FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while-loop", "src\chapters\04_loops\14_while-loop\while-loop.csproj", "{561FFFD1-B4CF-4FDD-8E79-7FF19F59812C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0402_while-loop", "src\chapters\04_loops\02_while-loop\0402_while-loop.csproj", "{561FFFD1-B4CF-4FDD-8E79-7FF19F59812C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "foreach-loop", "src\chapters\04_loops\15_foreach-loop\foreach-loop.csproj", "{A063BAB6-999A-40F9-84A9-753248CB7B99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0403_foreach-loop", "src\chapters\04_loops\03_foreach-loop\0403_foreach-loop.csproj", "{A063BAB6-999A-40F9-84A9-753248CB7B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "throw-exceptions", "src\chapters\05_exceptions\16_throw-exceptions\throw-exceptions.csproj", "{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0501_throw-exceptions", "src\chapters\05_exceptions\01_throw-exceptions\0501_throw-exceptions.csproj", "{4CAA8198-3ED1-423E-80BB-7ADB3C3E0707}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handle-exceptions", "src\chapters\05_exceptions\17_handle-exceptions\handle-exceptions.csproj", "{0C098FBA-CD65-4BCD-A0DB-FBDB2B0739E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0502_handle-exceptions", "src\chapters\05_exceptions\02_handle-exceptions\0502_handle-exceptions.csproj", "{0C098FBA-CD65-4BCD-A0DB-FBDB2B0739E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-definition", "src\chapters\06_methods\18_methods-definition\methods-definition.csproj", "{3D74F0DC-FE72-41C7-A414-62873825242E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0601_methods-definition", "src\chapters\06_methods\01_methods-definition\0601_methods-definition.csproj", "{3D74F0DC-FE72-41C7-A414-62873825242E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-overload", "src\chapters\06_methods\19_methods-overload\methods-overload.csproj", "{8DB0C155-E256-4493-B635-648ECEEF1994}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0602_methods-overload", "src\chapters\06_methods\02_methods-overload\0602_methods-overload.csproj", "{8DB0C155-E256-4493-B635-648ECEEF1994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-nested", "src\chapters\06_methods\20_methods-nested\methods-nested.csproj", "{093F575A-C79A-46AA-9BC4-A638040CB0A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0603_methods-nested", "src\chapters\06_methods\03_methods-nested\0603_methods-nested.csproj", "{093F575A-C79A-46AA-9BC4-A638040CB0A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-closure", "src\chapters\06_methods\21_methods-closure\methods-closure.csproj", "{ACF85432-5789-43CF-B67A-462F49E15BAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0604_methods-closure", "src\chapters\06_methods\04_methods-closure\0604_methods-closure.csproj", "{ACF85432-5789-43CF-B67A-462F49E15BAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methods-extension", "src\chapters\06_methods\22_methods-extension\methods-extension.csproj", "{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0605_methods-extension", "src\chapters\06_methods\05_methods-extension\0605_methods-extension.csproj", "{1B30870D-9DB1-4DA4-AD10-DC6EB0C4182C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class-definition", "src\chapters\07_class\23_class-definition\class-definition.csproj", "{51BA42F4-09F2-427A-961C-510668C2147B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0701_class-definition", "src\chapters\07_class\01_class-definition\0701_class-definition.csproj", "{51BA42F4-09F2-427A-961C-510668C2147B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class-fields", "src\chapters\07_class\24_class-fields\class-fields.csproj", "{5C7753F4-47C0-4851-B49F-A3A5DE1B4601}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0702_class-fields", "src\chapters\07_class\02_class-fields\0702_class-fields.csproj", "{5C7753F4-47C0-4851-B49F-A3A5DE1B4601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class-properties", "src\chapters\07_class\25_class-properties\class-properties.csproj", "{9317D2AC-74E6-4076-8A43-D2A6704ED7A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0703_class-properties", "src\chapters\07_class\03_class-properties\0703_class-properties.csproj", "{9317D2AC-74E6-4076-8A43-D2A6704ED7A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class-methods", "src\chapters\07_class\26_class-methods\class-methods.csproj", "{2C7C78E0-E861-4A1C-874E-CC82CD374DD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0704_class-methods", "src\chapters\07_class\04_class-methods\0704_class-methods.csproj", "{2C7C78E0-E861-4A1C-874E-CC82CD374DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructors-parameterized", "src\chapters\08_constructors\27_constructors-parameterized\constructors-parameterized.csproj", "{D9F70F01-5F5B-4B87-8007-B50188A81F81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0801_constructors-parameterized", "src\chapters\08_constructors\01_constructors-parameterized\0801_constructors-parameterized.csproj", "{D9F70F01-5F5B-4B87-8007-B50188A81F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructors-static", "src\chapters\08_constructors\28_constructors-static\constructors-static.csproj", "{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0802_constructors-static", "src\chapters\08_constructors\02_constructors-static\0802_constructors-static.csproj", "{B6BD5DD1-233E-4E32-9C2F-B6A8F0993A2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

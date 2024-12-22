@@ -51,9 +51,19 @@ namespace CodebookMenu
                     .ToArray();
 
                 int selectedChapterIndex = 0;
-                selectedChapterIndex = DisplayMenu($"Select a chapter from {selectedGroup.Name}:", chapters.Select(c => c.Name).Concat(new[] { "Back" }).ToArray(), selectedChapterIndex);
+                selectedChapterIndex = DisplayMenu($"Select a chapter from {selectedGroup.Name}:", chapters.Select(c => c.Name).Concat(new[] { "Add Chapter", "Remove Chapter", "Back" }).ToArray(), selectedChapterIndex);
 
                 if (selectedChapterIndex == chapters.Length)
+                {
+                    AddChapter(selectedGroup.Path);
+                    continue;
+                }
+                else if (selectedChapterIndex == chapters.Length + 1)
+                {
+                    RemoveChapter(selectedGroup.Path);
+                    continue;
+                }
+                else if (selectedChapterIndex == chapters.Length + 2)
                 {
                     continue;
                 }
@@ -100,6 +110,14 @@ namespace CodebookMenu
                 else if (key == ConsoleKey.Enter)
                 {
                     return selectedIndex;
+                }
+                else if (key == ConsoleKey.A)
+                {
+                    return options.Length; // Special case for adding a chapter
+                }
+                else if (key == ConsoleKey.R)
+                {
+                    return options.Length + 1; // Special case for removing a chapter
                 }
             } while (true);
         }
@@ -196,45 +214,41 @@ namespace CodebookMenu
             Console.ReadKey();
         }
 
-        static void RemoveChapter(string chaptersPath, int index)
+       static void RemoveChapter(string categoryPath)
         {
-            var chapters = Directory.GetDirectories(chaptersPath).OrderBy(d => d).ToList();
-            var chapterPath = chapters[index];
-            var projectName = Path.GetFileName(chapterPath).Substring(3); // Remove the numbering
-            var projectPath = Path.Combine(chapterPath, $"{projectName}.csproj");
+            Console.Clear();
+            Console.WriteLine("Remove a chapter");
+
+            var chapters = Directory.GetDirectories(categoryPath)
+                .Select(dir => new
+                {
+                    Name = Path.GetFileName(dir),
+                    Path = dir
+                })
+                .OrderBy(chapter => chapter.Name)
+                .ToArray();
+
+            int selectedChapterIndex = DisplayMenu("Select a chapter to remove:", chapters.Select(c => c.Name).Concat(new[] { "Cancel" }).ToArray());
+
+            if (selectedChapterIndex == chapters.Length)
+            {
+                return;
+            }
+            else if (selectedChapterIndex == -1)
+            {
+                return;
+            }
+
+            var selectedChapter = chapters[selectedChapterIndex];
+            Directory.Delete(selectedChapter.Path, true);
 
             // Remove the project from the solution
-            var solutionPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "../../codebook-csharp.sln"));
+            string solutionFilePath = Path.Combine(Directory.GetParent(categoryPath).Parent.FullName, "../codebook-csharp.sln");
+            Process.Start("dotnet", $"sln \"{solutionFilePath}\" remove \"{Path.Combine(selectedChapter.Path, $"{Path.GetFileName(selectedChapter.Path)}.csproj")}\"").WaitForExit();
 
-            var processStartInfo = new ProcessStartInfo
-            {
-                FileName = "dotnet",
-                Arguments = $"sln \"{solutionPath}\" remove \"{projectPath}\"",
-                WorkingDirectory = Path.GetDirectoryName(solutionPath),
-                UseShellExecute = false,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true
-            };
+            Console.WriteLine($"Chapter '{selectedChapter.Name}' removed from category '{Path.GetFileName(categoryPath)}'.");
 
-            using (var process = Process.Start(processStartInfo))
-            {
-                process.WaitForExit();
-                Console.WriteLine(process.StandardOutput.ReadToEnd());
-                Console.WriteLine(process.StandardError.ReadToEnd());
-            }
-
-            // Delete the chapter directory
-            Directory.Delete(chapterPath, true);
-
-            // Rename remaining chapters
-            for (int i = index; i < chapters.Count - 1; i++)
-            {
-                var oldPath = chapters[i + 1];
-                var newPath = Path.Combine(chaptersPath, $"{i + 1:D2}_{Path.GetFileName(oldPath).Substring(3)}");
-                Directory.Move(oldPath, newPath);
-            }
-
-            Console.WriteLine($"Chapter {index + 1:D2} removed. Press any key to continue...");
+            Console.WriteLine("\nPress any key to return to the menu...");
             Console.ReadKey();
         }
     }
