@@ -167,6 +167,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_threading", "src\chapter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_thread-safety", "src\chapters\13_asynchronicity\04_thread-safety\04_thread-safety.csproj", "{4316D9A7-D98B-4959-9DB2-2F366EE2E923}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_parallel", "src\chapters\13_asynchronicity\05_parallel\05_parallel.csproj", "{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_generics", "src\chapters\08_oop\06_generics\06_generics.csproj", "{97244180-26E1-4A5A-8FF7-7B8F076C3025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -441,6 +445,14 @@ Global
 		{4316D9A7-D98B-4959-9DB2-2F366EE2E923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4316D9A7-D98B-4959-9DB2-2F366EE2E923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4316D9A7-D98B-4959-9DB2-2F366EE2E923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97244180-26E1-4A5A-8FF7-7B8F076C3025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97244180-26E1-4A5A-8FF7-7B8F076C3025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97244180-26E1-4A5A-8FF7-7B8F076C3025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97244180-26E1-4A5A-8FF7-7B8F076C3025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -527,6 +539,8 @@ Global
 		{A8BEFB5A-383A-4A67-B140-E4BFFE61F0D0} = {142B0386-43CC-440C-BB3A-A015A4A393C8}
 		{2384B9ED-0261-4309-95DC-C616EB457AEC} = {142B0386-43CC-440C-BB3A-A015A4A393C8}
 		{4316D9A7-D98B-4959-9DB2-2F366EE2E923} = {142B0386-43CC-440C-BB3A-A015A4A393C8}
+		{655F4DAD-A3A1-41F4-8606-1E0346B2C9CA} = {142B0386-43CC-440C-BB3A-A015A4A393C8}
+		{97244180-26E1-4A5A-8FF7-7B8F076C3025} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
