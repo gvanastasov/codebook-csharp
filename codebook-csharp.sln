@@ -151,6 +151,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_lambda", "src\chapters\1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_anonymous", "src\chapters\12_func\03_anonymous\03_anonymous.csproj", "{8659EBF4-9A18-4C71-A5C0-0DFDD078FC65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_func", "src\chapters\12_func\04_func\04_func.csproj", "{59C6A2C3-6D41-4302-9957-1A6FC6C5D239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -397,6 +399,10 @@ Global
 		{8659EBF4-9A18-4C71-A5C0-0DFDD078FC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8659EBF4-9A18-4C71-A5C0-0DFDD078FC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8659EBF4-9A18-4C71-A5C0-0DFDD078FC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -475,6 +481,7 @@ Global
 		{57EC2ECD-E213-4831-B0CD-8E19836E2231} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 		{8BE01BE0-1015-4A10-9071-FC82158091FF} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 		{8659EBF4-9A18-4C71-A5C0-0DFDD078FC65} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
+		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
