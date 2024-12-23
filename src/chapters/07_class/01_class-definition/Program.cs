@@ -1,10 +1,10 @@
-﻿// Chapter 23: Class Definition
+﻿// Chapter 0701: Class Definition
 // This program demonstrates the definition of classes in C# 
 // with a simple example and detailed explanations.
 
 using System;
 
-namespace Chapter23
+namespace Chapter0701_ClassDefinition
 {
     class Program
     {
