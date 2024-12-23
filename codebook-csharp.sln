@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_methods-extension", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_overriding", "src\chapters\07_class\09_overriding\09_overriding.csproj", "{41C397BC-3F6C-4749-AD95-2F00EDB12800}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_interfaces", "src\chapters\07_class\10_interfaces\10_interfaces.csproj", "{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{41C397BC-3F6C-4749-AD95-2F00EDB12800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41C397BC-3F6C-4749-AD95-2F00EDB12800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41C397BC-3F6C-4749-AD95-2F00EDB12800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -264,6 +270,7 @@ Global
 		{F2EC4A77-C9C4-40EC-9720-3EC848E7CB01} = {FAB44F22-FFAB-4D99-B614-C9F1BC4122B0}
 		{5042C830-93D5-4A72-A82A-CE6B9C3DD8DC} = {FAB44F22-FFAB-4D99-B614-C9F1BC4122B0}
 		{41C397BC-3F6C-4749-AD95-2F00EDB12800} = {C740A8DC-AACE-44D1-87DF-7A5941F4EA10}
+		{7FA29215-1FFE-4473-8C6D-05F1CDE8BDEB} = {C740A8DC-AACE-44D1-87DF-7A5941F4EA10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
