@@ -185,6 +185,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_dynamic", "src\chapters\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_expression", "src\chapters\14_meta\04_expression\04_expression.csproj", "{37D3B2BA-590C-413D-8DDC-0F8220AAED16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_preprocessor-directives", "src\chapters\14_meta\05_preprocessor-directives\05_preprocessor-directives.csproj", "{AF7C3745-932A-4D67-B4AA-29651D90C1C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -491,6 +493,10 @@ Global
 		{37D3B2BA-590C-413D-8DDC-0F8220AAED16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37D3B2BA-590C-413D-8DDC-0F8220AAED16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37D3B2BA-590C-413D-8DDC-0F8220AAED16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -586,6 +592,7 @@ Global
 		{58346EBC-1C34-4269-9526-52469F5802DA} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{30019622-1B87-4BB3-904D-5B2A9BC9038E} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 		{37D3B2BA-590C-413D-8DDC-0F8220AAED16} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
+		{AF7C3745-932A-4D67-B4AA-29651D90C1C3} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
