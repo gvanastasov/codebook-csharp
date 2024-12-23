@@ -125,7 +125,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_types", "src\chapters\10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_reference", "src\chapters\10_memory\02_reference\02_reference.csproj", "{9093005D-3E37-4E78-A20B-A508133CF1B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "allocation", "src\chapters\10_memory\03_allocation\allocation.csproj", "{9139FB99-4510-456D-93BD-4628C90CAC3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_allocation", "src\chapters\10_memory\03_allocation\03_allocation.csproj", "{9139FB99-4510-456D-93BD-4628C90CAC3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
