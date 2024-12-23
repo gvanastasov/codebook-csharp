@@ -191,6 +191,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_immutability", "src\chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_record", "src\chapters\08_oop\09_record\09_record.csproj", "{B8C1355D-8085-458D-A7B2-8F54F200E77C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "init-only", "src\chapters\08_oop\10_init-only\init-only.csproj", "{30233DFA-E9EB-46D3-AF88-56A3985F8178}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -509,6 +511,10 @@ Global
 		{B8C1355D-8085-458D-A7B2-8F54F200E77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8C1355D-8085-458D-A7B2-8F54F200E77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8C1355D-8085-458D-A7B2-8F54F200E77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30233DFA-E9EB-46D3-AF88-56A3985F8178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30233DFA-E9EB-46D3-AF88-56A3985F8178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30233DFA-E9EB-46D3-AF88-56A3985F8178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30233DFA-E9EB-46D3-AF88-56A3985F8178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -607,6 +613,7 @@ Global
 		{AF7C3745-932A-4D67-B4AA-29651D90C1C3} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 		{8422685D-E69F-46EC-881A-36793A28C41E} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{B8C1355D-8085-458D-A7B2-8F54F200E77C} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
+		{30233DFA-E9EB-46D3-AF88-56A3985F8178} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
