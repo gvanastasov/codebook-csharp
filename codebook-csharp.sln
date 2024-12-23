@@ -179,13 +179,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_coalescing", "src\chapte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_reflection", "src\chapters\14_meta\02_reflection\02_reflection.csproj", "{0B7E8382-42FD-4DD6-9BA2-4744797078CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "activator", "src\chapters\08_oop\07_activator\activator.csproj", "{58346EBC-1C34-4269-9526-52469F5802DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_activator", "src\chapters\08_oop\07_activator\07_activator.csproj", "{58346EBC-1C34-4269-9526-52469F5802DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_dynamic", "src\chapters\14_meta\03_dynamic\03_dynamic.csproj", "{30019622-1B87-4BB3-904D-5B2A9BC9038E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_expression", "src\chapters\14_meta\04_expression\04_expression.csproj", "{37D3B2BA-590C-413D-8DDC-0F8220AAED16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_preprocessor-directives", "src\chapters\14_meta\05_preprocessor-directives\05_preprocessor-directives.csproj", "{AF7C3745-932A-4D67-B4AA-29651D90C1C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_immutability", "src\chapters\08_oop\08_immutability\08_immutability.csproj", "{8422685D-E69F-46EC-881A-36793A28C41E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -497,6 +499,10 @@ Global
 		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7C3745-932A-4D67-B4AA-29651D90C1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8422685D-E69F-46EC-881A-36793A28C41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8422685D-E69F-46EC-881A-36793A28C41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8422685D-E69F-46EC-881A-36793A28C41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8422685D-E69F-46EC-881A-36793A28C41E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -593,6 +599,7 @@ Global
 		{30019622-1B87-4BB3-904D-5B2A9BC9038E} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 		{37D3B2BA-590C-413D-8DDC-0F8220AAED16} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 		{AF7C3745-932A-4D67-B4AA-29651D90C1C3} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
+		{8422685D-E69F-46EC-881A-36793A28C41E} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
