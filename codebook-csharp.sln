@@ -135,6 +135,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_gc", "src\chapters\10_me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_management", "src\chapters\10_memory\06_management\06_management.csproj", "{303E4F79-52FA-4150-A5EC-A9611FB0786D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11_io", "11_io", "{F8A16414-2EF3-4A6C-860D-6D2A7D775E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_read-write", "src\chapters\11_io\01_read-write\01_read-write.csproj", "{E32CC31E-3CC4-41EE-91AE-AD992FCA552C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +361,10 @@ Global
 		{303E4F79-52FA-4150-A5EC-A9611FB0786D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{303E4F79-52FA-4150-A5EC-A9611FB0786D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{303E4F79-52FA-4150-A5EC-A9611FB0786D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -427,6 +435,8 @@ Global
 		{8F170648-2BB2-4F88-BC13-9C2C8949A788} = {10297575-409A-4E5A-BB35-D13FD2296996}
 		{C8206F8D-80CE-4F9D-9F57-00C09FB84817} = {10297575-409A-4E5A-BB35-D13FD2296996}
 		{303E4F79-52FA-4150-A5EC-A9611FB0786D} = {10297575-409A-4E5A-BB35-D13FD2296996}
+		{F8A16414-2EF3-4A6C-860D-6D2A7D775E59} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C} = {F8A16414-2EF3-4A6C-860D-6D2A7D775E59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
