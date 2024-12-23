@@ -143,6 +143,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_streams", "src\chapters\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_serialization", "src\chapters\11_io\03_serialization\03_serialization.csproj", "{7CDA7839-4952-4B02-B439-62810F19AC57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12_func", "12_func", "{78D55ED8-5C28-445E-8F79-6E09E949D538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_delegates", "src\chapters\12_func\01_delegates\01_delegates.csproj", "{57EC2ECD-E213-4831-B0CD-8E19836E2231}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -377,6 +381,10 @@ Global
 		{7CDA7839-4952-4B02-B439-62810F19AC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CDA7839-4952-4B02-B439-62810F19AC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CDA7839-4952-4B02-B439-62810F19AC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EC2ECD-E213-4831-B0CD-8E19836E2231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EC2ECD-E213-4831-B0CD-8E19836E2231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EC2ECD-E213-4831-B0CD-8E19836E2231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EC2ECD-E213-4831-B0CD-8E19836E2231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,6 +459,8 @@ Global
 		{E32CC31E-3CC4-41EE-91AE-AD992FCA552C} = {F8A16414-2EF3-4A6C-860D-6D2A7D775E59}
 		{CDDFAF55-DFC8-4EA4-B7D2-8FC217AF4CF2} = {F8A16414-2EF3-4A6C-860D-6D2A7D775E59}
 		{7CDA7839-4952-4B02-B439-62810F19AC57} = {F8A16414-2EF3-4A6C-860D-6D2A7D775E59}
+		{78D55ED8-5C28-445E-8F79-6E09E949D538} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{57EC2ECD-E213-4831-B0CD-8E19836E2231} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
