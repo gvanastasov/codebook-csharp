@@ -28,6 +28,50 @@ namespace Chapter37_PropertyPatterns
             person = new Person("Bob", 25);
             PrintPersonInfo(person);
 
+            // Example: Relational Patterns
+            // This example demonstrates the use of relational patterns.
+            Console.WriteLine("Example: Relational Patterns.");
+
+            int number = 42;
+            string result = number switch
+            {
+                < 0 => "Negative",
+                0 => "Zero",
+                > 0 and < 10 => "Single digit",
+                >= 10 and < 100 => "Double digits",
+                _ => "Large number"
+            };
+            Console.WriteLine($"Number {number} is a {result}.");
+
+            // Example: Logical Patterns (and, or, not)
+            // This example demonstrates the use of logical patterns.
+            Console.WriteLine("\nExample: Logical Patterns (and, or, not).");
+
+            object obj = "Hello, World!";
+            string description = obj switch
+            {
+                string s and not null => $"String of length {s.Length}",
+                int i and >= 0 => $"Non-negative integer {i}",
+                int i and < 0 => $"Negative integer {i}",
+                null => "Null object",
+                _ => "Unknown type"
+            };
+            Console.WriteLine($"Object description: {description}");
+
+            // Example: Combining Patterns
+            // This example demonstrates how to combine patterns using logical operators.
+            Console.WriteLine("\nExample: Combining Patterns.");
+
+            int age = 25;
+            string ageGroup = age switch
+            {
+                < 13 => "Child",
+                >= 13 and < 20 => "Teenager",
+                >= 20 and < 65 => "Adult",
+                >= 65 => "Senior"
+            };
+            Console.WriteLine($"Age {age} is in the {ageGroup} group.");
+
             // Pause for user review
             // This line pauses the program execution and waits for the user to press any key before exiting.
             Console.WriteLine("\nPress any key to exit...");
