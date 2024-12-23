@@ -199,6 +199,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_covariant-returns", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_target-types", "src\chapters\08_oop\12_target-types\12_target-types.csproj", "{1950229C-961E-406A-9AE3-2D9FD9FF70B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_debug", "src\chapters\14_meta\06_debug\06_debug.csproj", "{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -533,6 +535,10 @@ Global
 		{1950229C-961E-406A-9AE3-2D9FD9FF70B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1950229C-961E-406A-9AE3-2D9FD9FF70B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1950229C-961E-406A-9AE3-2D9FD9FF70B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -635,6 +641,7 @@ Global
 		{C34F1A8C-2B14-4B6D-A5F3-AE5E1535B421} = {FAB44F22-FFAB-4D99-B614-C9F1BC4122B0}
 		{58E573EE-4D88-49C2-8168-419626581AD7} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{1950229C-961E-406A-9AE3-2D9FD9FF70B7} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
+		{0CEE9C62-EF7C-4A9E-9BC9-FAAF9FDAB5E9} = {D3734E83-6182-404D-92A6-A789C9F6ECBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
