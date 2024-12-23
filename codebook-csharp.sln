@@ -115,6 +115,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_dictionaries", "src\chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_linq", "src\chapters\09_collections\05_linq\05_linq.csproj", "{A1CB1749-D93A-4EE4-B4DB-C335C09E2719}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_enumerations", "src\chapters\09_collections\06_enumerations\06_enumerations.csproj", "{7A77C731-7B4C-4FBA-B314-2004484368F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -301,6 +303,10 @@ Global
 		{A1CB1749-D93A-4EE4-B4DB-C335C09E2719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1CB1749-D93A-4EE4-B4DB-C335C09E2719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1CB1749-D93A-4EE4-B4DB-C335C09E2719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A77C731-7B4C-4FBA-B314-2004484368F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A77C731-7B4C-4FBA-B314-2004484368F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A77C731-7B4C-4FBA-B314-2004484368F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A77C731-7B4C-4FBA-B314-2004484368F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -361,6 +367,7 @@ Global
 		{F0E1A6BB-7756-44EE-8206-C23EC07D73CB} = {16B55FB1-0FA8-4E01-A6D9-27834AB7A333}
 		{B70B87D2-C898-4AB2-8B0C-DA5650D9F692} = {16B55FB1-0FA8-4E01-A6D9-27834AB7A333}
 		{A1CB1749-D93A-4EE4-B4DB-C335C09E2719} = {16B55FB1-0FA8-4E01-A6D9-27834AB7A333}
+		{7A77C731-7B4C-4FBA-B314-2004484368F2} = {16B55FB1-0FA8-4E01-A6D9-27834AB7A333}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
