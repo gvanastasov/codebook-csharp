@@ -157,6 +157,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_action", "src\chapters\1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_predicate", "src\chapters\12_func\06_predicate\06_predicate.csproj", "{8362FEE1-41FD-4E53-9298-315AD5492A2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13_asynchronicity", "13_asynchronicity", "{142B0386-43CC-440C-BB3A-A015A4A393C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_awaiting", "src\chapters\13_asynchronicity\01_awaiting\01_awaiting.csproj", "{249CFFA6-6162-4B15-A550-DBFE51D33934}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -415,6 +419,10 @@ Global
 		{8362FEE1-41FD-4E53-9298-315AD5492A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8362FEE1-41FD-4E53-9298-315AD5492A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8362FEE1-41FD-4E53-9298-315AD5492A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249CFFA6-6162-4B15-A550-DBFE51D33934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249CFFA6-6162-4B15-A550-DBFE51D33934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249CFFA6-6162-4B15-A550-DBFE51D33934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249CFFA6-6162-4B15-A550-DBFE51D33934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -496,6 +504,8 @@ Global
 		{59C6A2C3-6D41-4302-9957-1A6FC6C5D239} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 		{30326DD6-4289-49FA-BDE0-BBE954E8C42F} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
 		{8362FEE1-41FD-4E53-9298-315AD5492A2A} = {78D55ED8-5C28-445E-8F79-6E09E949D538}
+		{142B0386-43CC-440C-BB3A-A015A4A393C8} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{249CFFA6-6162-4B15-A550-DBFE51D33934} = {142B0386-43CC-440C-BB3A-A015A4A393C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
