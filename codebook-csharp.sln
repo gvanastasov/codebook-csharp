@@ -103,6 +103,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_pattern-match", "src\cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_polymorphism", "src\chapters\08_oop\04_polymorphism\04_polymorphism.csproj", "{6498EBF8-CBA2-4783-B83F-87273708ED5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_collections", "09_collections", "{16B55FB1-0FA8-4E01-A6D9-27834AB7A333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_arrays", "src\chapters\09_collections\01_arrays\01_arrays.csproj", "{C0BF31A3-E360-427F-A45C-390692630932}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -269,6 +273,10 @@ Global
 		{6498EBF8-CBA2-4783-B83F-87273708ED5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6498EBF8-CBA2-4783-B83F-87273708ED5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6498EBF8-CBA2-4783-B83F-87273708ED5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BF31A3-E360-427F-A45C-390692630932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BF31A3-E360-427F-A45C-390692630932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BF31A3-E360-427F-A45C-390692630932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BF31A3-E360-427F-A45C-390692630932}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -323,6 +331,8 @@ Global
 		{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{C99B249D-25FC-416C-9D01-7B313E917A68} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{6498EBF8-CBA2-4783-B83F-87273708ED5D} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
+		{16B55FB1-0FA8-4E01-A6D9-27834AB7A333} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
+		{C0BF31A3-E360-427F-A45C-390692630932} = {16B55FB1-0FA8-4E01-A6D9-27834AB7A333}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
