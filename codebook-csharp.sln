@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_access-modifiers", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_encapsulation", "src\chapters\08_oop\02_encapsulation\02_encapsulation.csproj", "{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_pattern-match", "src\chapters\08_oop\03_pattern-match\03_pattern-match.csproj", "{C99B249D-25FC-416C-9D01-7B313E917A68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -257,6 +259,10 @@ Global
 		{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99B249D-25FC-416C-9D01-7B313E917A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99B249D-25FC-416C-9D01-7B313E917A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99B249D-25FC-416C-9D01-7B313E917A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99B249D-25FC-416C-9D01-7B313E917A68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,6 +315,7 @@ Global
 		{D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1} = {5628B24A-4EA8-4324-AAB3-8FAF018A7C72}
 		{A5BBB26D-3794-489C-A9ED-EC89FC4AF0C4} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 		{A5BBF541-C8CD-43B5-A3ED-C1129FED6E82} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
+		{C99B249D-25FC-416C-9D01-7B313E917A68} = {D0AF6B25-A0F2-4581-ACC0-FF207E70ABC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BE1D52-C5CC-42F3-AA79-B2ADB82BA8E2}
