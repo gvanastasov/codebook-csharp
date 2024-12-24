@@ -12,7 +12,7 @@ dotnet run
 
 From hereon, just navigate around the menus and select to run a particular 'chapter' topic, which is nothing but a simple program to demonstrate its contents. The more interesting part is obviously the code, so focus on that, and less on the console output.
 
-> solutions target c# 9.0, so make sure to have that instealled.
+> solutions target .net9.0 and hence this codebook is written based on c# 13, so make sure to have that instealled.
 
 ## Chapters
 
